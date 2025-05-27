@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mensajería - Proyecto Docente</title>
+  <link rel="stylesheet" href="css/anuncio.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex">
+
+  <!-- Barra lateral fija -->
+  <aside class="fixed top-0 left-0 h-full w-12 flex flex-col justify-between items-center py-6 bg-gray-300 z-20">
+    <div class="flex flex-col gap-4">
+      <button class="p-2 rounded hover:bg-gray-400 transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Inicio" class="w-6 h-6" />
+      </button>
+      <button class="p-2 rounded hover:bg-gray-400 transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="Usuario" class="w-6 h-6" />
+      </button>
+      <button class="p-2 rounded hover:bg-gray-400 transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/565/565547.png" alt="Poderes" class="w-6 h-6" />
+      </button>
+      <button class="p-2 rounded hover:bg-gray-400 transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/61/61112.png" alt="Sentencias" class="w-6 h-6" />
+      </button>
+      <button class="p-2 rounded hover:bg-gray-400 transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/609/609803.png" alt="Misiones" class="w-6 h-6" />
+      </button>
+      <button class="p-2 rounded hover:bg-gray-400 transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/126/126486.png" alt="Habilidades" class="w-6 h-6" />
+      </button>
+      <button class="p-2 rounded hover:bg-gray-400 transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/1041/1041916.png" alt="Inventario" class="w-6 h-6" />
+      </button>
+      <button class="p-2 rounded hover:bg-gray-400 transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/3524/3524659.png" alt="Mensajes" class="w-6 h-6" />
+      </button>
+    </div>
+    <button class="p-2 rounded hover:bg-red-500 transition">
+      <img src="https://cdn-icons-png.flaticon.com/512/126/126122.png" alt="Cerrar sesión" class="w-6 h-6" />
+    </button>
+  </aside>
+
+  <!-- Contenido principal -->
+  <div class="flex-1 ml-12 flex flex-col">
+    
+    <!-- Barra superior -->
+    <header class="bg-blue-600 text-white p-4 flex justify-between items-center sticky top-0 z-10">
+      <h1 class="text-2xl font-semibold">Mensajería</h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="hover:underline">Inicio</a>
+        <a href="clases.html" class="hover:underline">Clases</a>
+        <a href="equipo.html" class="hover:underline">Equipo</a>
+        <a href="anuncio.html" class="hover:underline font-bold underline">Mensajería</a>
+      </nav>
+    </header>
+
+    <!-- Contenido de Mensajería -->
+    <main class="flex flex-col md:flex-row p-6 gap-6 max-w-7xl mx-auto">
+
+      <!-- Lista de conversaciones (izquierda) -->
+      <section class="bg-white rounded-lg shadow p-4 flex-1 md:max-w-xs">
+        <h2 class="text-xl font-semibold mb-4">Conversaciones</h2>
+        <ul class="divide-y divide-gray-200">
+          <li class="py-2 cursor-pointer hover:bg-blue-100 rounded px-2">Alumno Juan</li>
+          <li class="py-2 cursor-pointer hover:bg-blue-100 rounded px-2">Profesor María</li>
+          <li class="py-2 cursor-pointer hover:bg-blue-100 rounded px-2">Equipo de Soporte</li>
+          <li class="py-2 cursor-pointer hover:bg-blue-100 rounded px-2">David Carhuaz</li>
+        </ul>
+      </section>
+
+      <!-- Chat y mensajes (derecha) -->
+      <section class="bg-white rounded-lg shadow p-4 flex-1 flex flex-col">
+        <h2 class="text-xl font-semibold mb-4">Chat con Alumno Juan</h2>
+
+        <!-- Mensajes -->
+        <div id="chatWindow" class="flex-1 overflow-y-auto mb-4 border border-gray-300 rounded p-3 bg-gray-50">
+          <div class="mb-2"><span class="font-bold">Juan:</span> Hola, ¿cómo puedo mejorar en matemáticas?</div>
+          <div class="mb-2 text-right"><span class="font-bold">Tú:</span> Hola Juan, te recomiendo practicar ejercicios diarios.</div>
+          <div class="mb-2"><span class="font-bold">Juan:</span> Gracias, lo haré.</div>
+        </div>
+
+
+
+        <!-- Formulario para enviar mensaje -->
+<form id="messageForm" class="flex gap-2 mb-2" onsubmit="return false;">
+    <input
+      id="messageInput"
+      type="text"
+      placeholder="Escribe tu mensaje..."
+      class="flex-grow border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      required
+    />
+    <button
+      type="submit"
+      class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+    >
+      Enviar
+    </button>
+  </form>
+
+
+        
+<!-- Botón para enviar mensaje general -->
+<button
+id="sendGeneralMessage"
+class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
+>
+Enviar mensaje general
+</button>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="js/anuncio.js"></script>
+</body>
+</html>

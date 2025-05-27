@@ -1,0 +1,23 @@
+/* Estilo adicional personalizado para Mensajería */
+
+/* Scroll suave y estilo del chat */
+#chatWindow {
+    scrollbar-width: thin;
+    scrollbar-color: #3b82f6 #d1d5db;
+    /* azul y gris claro */
+}
+
+#chatWindow::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chatWindow::-webkit-scrollbar-track {
+    background: #d1d5db;
+    border-radius: 4px;
+}
+
+#chatWindow::-webkit-scrollbar-thumb {
+    background-color: #3b82f6;
+    border-radius: 4px;
+    border: 2px solid #d1d5db;
+}

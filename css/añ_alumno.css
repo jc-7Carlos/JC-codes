@@ -1,0 +1,11 @@
+/*css/añ_alumno.css*/
+
+.opcion {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.opcion:hover {
+    transform: scale(1.05);
+}
+
+
