@@ -1,6 +1,4 @@
-# Título de mi proyecto
 
-# Frontend de Classcraft
 
 # Frontend de Classcraft
 
