@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mis Clases - Configuración</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/mis_clases.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Barra de navegación -->
+  <header class="bg-white shadow-md p-4 flex justify-between items-center">
+    <div class="flex items-center gap-2">
+      <img src="imagenes/logo-classcraft.png" alt="Logo Classcraft" class="w-8 h-8" />
+      <h1 class="text-xl font-bold">Mis Clases</h1>
+    </div>
+    <nav>
+      <ul class="flex space-x-4 text-gray-700">
+        <li><a href="index.html" class="hover:text-green-600">Inicio</a></li>
+        <li><a href="actividad.html" class="hover:text-green-600">Actividad</a></li>
+        <li><a href="mi_biblioteca.html" class="hover:text-green-600">Mi Biblioteca</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="max-w-5xl mx-auto p-4 " >
+    <div class="bg-white p-6 rounded shadow space-y-5 ">
+      <!-- Título y botón Jugar -->
+      <div class="flex justify-between items-center mb-4 ">
+        <h2 class="text-xl font-bold text-gray-800">Clase: Matemáticas de 5to</h2>
+        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">
+          Jugar
+        </button>
+      </div>
+
+      <!-- Lista de pasos en forma horizontal -->
+      <div class="flex flex-col md:flex-row gap-4 justify-between">
+        <div class="bg-gray-100 p-4 rounded shadow flex-1 text-center">
+          <h3 class="font-semibold mb-2">1. Valorar comportamientos</h3>
+          <p class="text-gray-600 text-sm">Evalúa comportamientos.</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded shadow flex-1 text-center">
+          <h3 class="font-semibold mb-2">2. Valorar poderes</h3>
+          <p class="text-gray-600 text-sm">Configura los poderes.</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded shadow flex-1 text-center">
+          <h3 class="font-semibold mb-2">3. Asignar alumnos</h3>
+          <p class="text-gray-600 text-sm">Asigna a tus estudiantes.</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded shadow flex-1 text-center">
+          <h3 class="font-semibold mb-2">4. Preparar introducción</h3>
+          <p class="text-gray-600 text-sm">Dale la bienvenida a tu clase.</p>
+        </div>
+      </div>
+
+      <!-- Botón seleccionar clase -->
+      <button id="btn-seleccionar-clase" class="mt-4 w-full bg-green-600 text-white p-3 rounded hover:bg-green-700 transition">
+        Seleccionar clase
+      </button>
+    </div>
+  </main>
+
+  <script src="js/mis_clases.js"></script>
+</body>
+</html>

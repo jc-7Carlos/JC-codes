@@ -1,0 +1,13 @@
+/* mis_clases.css */
+
+/* Para dar una sombra suave a los pasos */
+ol li {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ol li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+
